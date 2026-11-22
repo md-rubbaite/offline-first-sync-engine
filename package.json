@@ -1,0 +1,37 @@
+{
+  "name": "offline-first-sync-engine",
+  "version": "1.0.0",
+  "description": "Offline-first sync for web and mobile apps: hybrid logical clocks, field-level last-writer-wins CRDT, durable outbox, idempotent server log. Zero runtime dependencies.",
+  "license": "MIT",
+  "author": "Rubbaite T. Hassain (Datazo InfoTech)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/md-rubbaite/offline-first-sync-engine.git"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    }
+  },
+  "files": [
+    "dist/src"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "tsc -p . && node --test \"dist/test/**/*.test.js\"",
+    "demo": "tsc -p . && node dist/examples/two-devices.js",
+    "prepare": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}
