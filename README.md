@@ -126,4 +126,6 @@ Built by **Rubbaite T. Hassain**, Software Architect and founder of
 [Datazo InfoTech](https://www.datazoinfotech.com.bd). We build offline-capable fintech and
 healthcare systems. Get in touch if you need this taken to production.
 
+Architecture, requirements and review by Rubbaite T. Hassain; implementation AI-assisted.
+
 MIT licensed.
